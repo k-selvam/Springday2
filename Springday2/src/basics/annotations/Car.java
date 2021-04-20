@@ -5,6 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Car implements Vehicle{
+	public Car() {
+		System.out.println("Car- constructor");
+	}
 	
 	@Autowired
 	Tyre tyre;
@@ -21,7 +24,7 @@ public class Car implements Vehicle{
 
 
 	public void drive() {
-		System.out.println("driving car with tyre : "+tyre);
+		System.out.println("driving car with tyre "+tyre);
 	}
 
 }
