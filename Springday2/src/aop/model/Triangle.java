@@ -1,9 +1,11 @@
+
 package aop.model;
 
 public class Triangle {
 	String name;
 	
-	public Triangle() {}
+	public Triangle() {System.out.println("in triangle constructor");}
+
 
 	public String getName() {
 		return name;
